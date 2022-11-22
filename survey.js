@@ -35,14 +35,7 @@ rl.question('What\'s your name? Nicknames are also acceptable :) ' , (answer) =>
 
             rl.question('What is your superpower? In a few words, tell us what you are amazing at! ' , (answer) => {
               const superpower = answer;
-              console.log(`My name is ${name}.`);
-              console.log(`The activity I am fond of is ${activity}.`);
-              console.log(`I listen to ${music} while doing ${activity}`);
-              console.log(`Favorite meal is ${meal}.`);
-              console.log(`What I like to eat on that meal is ${favoriteMeal}.`);
-              console.log(`I love the sport ${sport}.`);
-              console.log(`My superpower is ${superpower}.`);
-              
+              console.log(`${name} loves listening to ${music} while ${activity}, devouring ${favoriteMeal} for ${meal}, prefers ${sport} over any other sport, and is amazing at ${superpower}.`)   
               rl.close();
             });
           });
